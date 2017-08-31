@@ -1,2 +1,117 @@
-<script src='build/main.bundle.js'></script>
-	Hello world
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Visual Keyboard</title>
+	<script type="text/javascript" src="js/index.js"></script>
+	<style>
+		body{
+			background-color: #B0E0E6;
+		}
+		button{
+			font-size: 16px;
+			border-radius: 8px;
+			cursor: pointer;
+			background-color: #FFFFFF;
+			font-family: "courier";
+			transition-duration: 0.5s;
+			border: none;
+    		color: #000000;
+    		padding: 5px 10px;
+    		text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		margin: 4px 2px;
+    		width: 50px;
+    		height: 50px;
+		}
+		button:hover{
+			background-color: #DB7093;
+			color: #FFFFFF;
+			border-style: solid;
+    		border-width: medium;
+    		text-align: center;
+		}
+		textarea{
+			background-color : #000000; 
+			font-size : 22px; 
+			border-radius: 4px;
+			font-family: "courier";
+			width : 700px;
+			height : 200px;
+			color: #FFFFFF;
+		}
+		h1{
+			font-family: "courier";
+			color: #000000;
+			text-shadow: 2px 2px 5px red;
+		}
+	</style>
+</head>
+<body>
+	<div style="text-align: center;">
+	<textarea id="val" name="text" rows="4" cols="100" style="border-style: groove; border-style: solid; border-width: medium; border-radius: 16px";></textarea>
+	<br/>
+	<h1>Visual Keyboard</h1>
+	<br/>
+	<div style="text-align: center;">
+			<button type="button" onclick="clickchar('`');">`</button>
+			<button type="button" onclick="clickchar('1');">1</button>
+			<button type="button" onclick="clickchar('2');">2</button>
+			<button type="button" onclick="clickchar('3');">3</button>
+			<button type="button" onclick="clickchar('4');">4</button>
+			<button type="button" onclick="clickchar('5');">5</button>
+			<button type="button" onclick="clickchar('6');">6</button>
+			<button type="button" onclick="clickchar('7');">7</button>
+			<button type="button" onclick="clickchar('8');">8</button>
+			<button type="button" onclick="clickchar('9');">9</button>
+			<button type="button" onclick="clickchar('0');">0</button>
+			<button type="button" onclick="clickchar('-');">-</button>
+			<button type="button" onclick="clickchar('=');">=</button>
+			<button type="button" onclick="clickdel();" style="width:110px;">Backspace</button>
+			<br/><br/>
+			<button type="button" onclick="clicktab();" style="width:80px;">Tab</button>
+			<button type="button" onclick="clickchar('q');">q</button>
+			<button type="button" onclick="clickchar('w');">w</button>
+			<button type="button" onclick="clickchar('e');">e</button>
+			<button type="button" onclick="clickchar('r');">r</button>
+			<button type="button" onclick="clickchar('t');">t</button>
+			<button type="button" onclick="clickchar('y');">y</button>
+			<button type="button" onclick="clickchar('u');">u</button>
+			<button type="button" onclick="clickchar('i');">i</button>
+			<button type="button" onclick="clickchar('o');">o</button>
+			<button type="button" onclick="clickchar('p');">p</button>
+			<button type="button" onclick="clickchar('[');">[</button>
+			<button type="button" onclick="clickchar(']');">]</button>
+			<button type="button" onclick="clickchar('\\');">\</button>
+			<br/><br/>
+			<button type="button" onclick="clickchar('a');">a</button>
+			<button type="button" onclick="clickchar('s');">s</button>
+			<button type="button" onclick="clickchar('d');">d</button>
+			<button type="button" onclick="clickchar('f');">f</button>
+			<button type="button" onclick="clickchar('g');">g</button>
+			<button type="button" onclick="clickchar('h');">h</button>
+			<button type="button" onclick="clickchar('j');">j</button>
+			<button type="button" onclick="clickchar('k');">k</button>
+			<button type="button" onclick="clickchar('l');">l</button>
+			<button type="button" onclick="clickchar(';');">;</button>
+			<button type="button" onclick="clickchar('\'');">'</button>
+			<button type="button" onclick="clickenter();" style="width:100px;">Enter</button>
+			<br/><br/>
+			<button type="button" onclick="clickchar('z');">z</button>
+			<button type="button" onclick="clickchar('x');">x</button>
+			<button type="button" onclick="clickchar('c');">c</button>
+			<button type="button" onclick="clickchar('v');">v</button>
+			<button type="button" onclick="clickchar('b');">b</button>
+			<button type="button" onclick="clickchar('n');">n</button>
+			<button type="button" onclick="clickchar('m');">m</button>
+			<button type="button" onclick="clickchar(',');">,</button>
+			<button type="button" onclick="clickchar('.');">.</button>
+			<button type="button" onclick="clickchar('/');">/</button>
+			<button type="button" onclick="clickclear();" style="width: 100px">Clear</button>
+			<br/><br/>	
+			<button type="button" onclick="clickspace();" style="width:500px;"></button>
+	</div>
+	</div>
+	</body>
+</html>
